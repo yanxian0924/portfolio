@@ -47,8 +47,7 @@ gulp.task('build', [
   'imagemin',
   'jade',
   'sass',
-  'browserify',
-  'images'
+  'browserify'
 ]);
 
 // Server tasks with watch
@@ -61,12 +60,6 @@ gulp.task('serve', [
   'browserSync',
   'watch'
 ]);
-
-// Copy all static images
-gulp.task('images', ['clean'], function() {
-  return gulp.src(paths.images)
-    .pipe(gulp.dest('build/images'));
-});
 
 // Testing
 gulp.task('test', ['eslint']);
