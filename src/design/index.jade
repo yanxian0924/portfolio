@@ -1,0 +1,27 @@
+extends ../_layouts/category
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+include ../_modules/menu/menu
+
+block menu
+  +menu('design')(class='menu')
+
+block title
+  h1 Design
+
+block description
+  p.subtext.
+    I aspire to design and build experiences that are useful, pleasant and meaningful. To me, good design solutions come from deep empathy of the users, good understanding of the problem, constraints and business objectives, iterations closely with user feedback, and intentional decisions with solid reasoning.
+
+block category-content
+  .category-content.clearfix
+    each project in site.data.design
+      div.project
+        a(href= project.link)
+          img(src= project.thumbnail, class='project-thumbnail')
+        h3.project-name
+          a(href= project.link)= project.name
+        label.project-label= project.label

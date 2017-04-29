@@ -1,0 +1,114 @@
+// Landing syles
+
+.landing-name
+  font-weight: $fontWeight-primary-bold
+  text-align: center
+  width: 100%
+  margin-top: $baseline
+  line-height: 1.5 * $baseline // the same height as the logo
+
+.landing-image-half
+  width: 50%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  z-index: $zIndex-negative
+  opacity: 0
+  transition: opacity .3s ease
+
+  &.is-shown
+    opacity: 1
+
+  @media #{$small-only}
+    display: none
+
+.landing-image--portrait
+  background: url('../images/landing_bg.jpg') no-repeat center center
+  background-size: cover
+  animation: fadeIn 1s ease forwards
+  animation-delay: .3s
+
+.landing-image--code
+  background: url('../images/landing_design_bg.jpg') no-repeat center center
+  background-size: cover
+
+.landing-image--design
+  background: url('../images/landing_art_bg.jpg') no-repeat center center
+  background-size: cover
+
+.landing-image--art
+  background: url('../images/landing_music_bg.jpg') no-repeat center center
+  background-size: cover
+
+.landing-text-half
+  width: 50%
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  overflow-y: hidden
+
+  @media #{$small-only}
+    width: 100%
+    position: static
+
+  @media #{$medium-up}
+    transform-style: preserve-3d
+    height: 100%
+
+.landing-text
+  text-align: center
+  padding: 0 $baseline
+  opacity: 0
+
+  @media #{$small-only}
+    animation: fadeInUp .3s ease-in-out forwards
+    animation-delay: .5s
+    padding: 3*$baseline $baseline
+
+  @media #{$medium-up}
+    animation: fadeInUpVerticalCenter .3s ease-in-out forwards
+    animation-delay: 1s
+    position: relative
+    top: 50%
+
+.landing-label
+  @include typeScale(5)
+  margin-bottom: 2*$baseline
+  font-weight: $fontWeight-accent-bold
+
+// mobile sections
+.landing-mobile-section
+  // very similar to cover image module
+  // can consider a more general module
+  display: block
+  max-height: 20 * $baseline
+  max-width: 1800px
+  overflow: hidden
+  background-position: 50%
+  background-repeat: no-repeat
+  background-size: cover
+  margin: 0 auto
+  position: relative
+
+  &:before
+    content: " "
+    display: block
+    padding-bottom: 75% // 4:3 aspect ratio
+
+  h3
+    position: absolute
+    bottom: 0.5*$baseline
+    left: $baseline
+    color: $color-grey-1
+
+  @media #{$medium-up}
+    display: none
+
+.landing-footer
+  footer
+    margin-top: 0
+
+  @media #{$medium-up}
+    display: none

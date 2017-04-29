@@ -1,0 +1,27 @@
+extends ../_layouts/category
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+include ../_modules/menu/menu
+
+block menu
+  +menu('code')(class='menu')
+
+block title
+  h1 Code
+
+block description
+  p.subtext.
+    Programming thrills me to take on intellectual challenges and make things work. I love computer science because it enables people to interact in ways they were not able to before. As a software engineer, I’m contributing to humanity by shaping the future of human interaction.
+
+block category-content
+  .category-content.clearfix
+    each project in site.data.code
+      div.project
+        a(href= project.link)
+          img(src= project.thumbnail, class='project-thumbnail')
+        h3.project-name
+          a(href= project.link)= project.name
+        label.project-label= project.label

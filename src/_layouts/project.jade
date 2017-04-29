@@ -1,0 +1,19 @@
+extend ./base
+
+include ../_modules/footer/footer
+include ../_modules/menu/menu
+
+//- // Add extra stylesheets
+//- block append stylesheets
+
+block content
+
+  //- Provides layout level markup
+
+  block project-content
+
+  +footer
+  +menu(class='menu')
+
+//- // Add extra scripts
+//- block append scripts

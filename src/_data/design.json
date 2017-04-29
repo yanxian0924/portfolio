@@ -1,0 +1,16 @@
+[{
+  "name": "Evant",
+  "label": "UX Design, Information Architect, Visual Design.",
+  "thumbnail": "../../images/design/evant.png",
+  "link": "/design/evant"
+}, {
+  "name": "Coursmart",
+  "label": "Interaction Design, UX Design, Product Concept.",
+  "thumbnail": "../../images/design/coursmart.png",
+  "link": "/design/coursmart"
+}, {
+  "name": "CARE",
+  "label": "UX Research, Interaction Design.",
+  "thumbnail": "../../images/design/care.png",
+  "link": "/design/care"
+}]

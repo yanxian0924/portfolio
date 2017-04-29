@@ -1,0 +1,36 @@
+// Keyframes animations
+
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    left: 6%
+  100%
+    opacity: 1
+    left: 0
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes fadeInUp
+  0%
+    opacity: 0
+    transform: translateY(1rem)
+  100%
+    opacity: 1
+    transform: none
+
+// after fading in up, also vertically center the object
+@keyframes fadeInUpVerticalCenter
+  0%
+    opacity: 0
+    transform: translateY(-45%)
+  100%
+    opacity: 1
+    transform: translateY(-50%)
+
+.content--fadeIn
+  animation: fadeIn 1s ease
+

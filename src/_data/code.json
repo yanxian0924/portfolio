@@ -1,0 +1,31 @@
+[{
+  "name": "PetHome",
+  "label": "Responsive Web Development, PHP, MariaDB.",
+  "thumbnail": "../../images/code/pethome.png",
+  "link": "/code/pethome"
+}, {
+  "name": "GivePulse Impact Map",
+  "label": "Interactive Map Development, PHP, Gmap3.",
+  "thumbnail": "../../images/code/givepulse.png",
+  "link": "/code/givepulse"
+}, {
+  "name": "EveryBite",
+  "label": "iOS App Development, Objective-C, Parse Server.",
+  "thumbnail": "../../images/code/everybite.png",
+  "link": "https://github.com/yanxian0924/Everybite"
+}, {
+  "name": "Yelp Review Rating Prediction",
+  "label": "Machine Learning, Python.",
+  "thumbnail": "../../images/code/yelp.png",
+  "link": "/code/yelp"
+}, {
+  "name": "DPLA Command Line Tool",
+  "label": "Metadata Analysis and Mining, Python.",
+  "thumbnail": "../../images/code/dpla.png",
+  "link": "https://github.com/yanxian0924/DPLA_metadata"
+}, {
+  "name": "iPet",
+  "label": "iOS App Development, Swift.",
+  "thumbnail": "../../images/code/ipet.png",
+  "link": "/code/ipet"
+}]
