@@ -47,7 +47,8 @@ gulp.task('build', [
   'imagemin',
   'jade',
   'sass',
-  'browserify'
+  'browserify',
+  'images'
 ]);
 
 // Server tasks with watch
@@ -61,12 +62,18 @@ gulp.task('serve', [
   'watch'
 ]);
 
+// Copy all static images
+gulp.task('images', ['clean'], function() {
+  return gulp.src(paths.images)
+    .pipe(gulp.dest('build/images'));
+});
+
 // Testing
 gulp.task('test', ['eslint']);
 
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', function () {
+gulp.task('deploy', ['build'], function () {
   return gulp.src("./build/**/*").pipe(deploy())
 });
