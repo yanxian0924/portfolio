@@ -68,5 +68,5 @@ gulp.task('test', ['eslint']);
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*").pipe(deploy())
+  return gulp.src("./build/**/*").pipe(deploy())
 });

@@ -1,12 +1,3 @@
-# Yanxian readme
-
-Generated on 2017-01-23 using
-[generator-yeogurt@1.5.3](https://github.com/larsonjj/generator-yeogurt)
-
-## Description
-
-Yanxian's' portfolio
-
 ## Technologies used
 
 JavaScript
